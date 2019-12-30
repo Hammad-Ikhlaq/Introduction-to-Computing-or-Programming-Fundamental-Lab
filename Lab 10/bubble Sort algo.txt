@@ -1,0 +1,19 @@
+void bubble_sort(int list[], int n)
+{
+  int t;
+ 
+  for (int c = 0 ; c < ( n - 1 ); c++)
+  {
+    for (int d = 0 ; d < n - c - 1; d++)
+    {
+      if (list[d] > list[d+1])
+      {
+        t         = list[d];
+        list[d]   = list[d+1];
+        list[d+1] = t;
+      }
+    }
+  }
+}
+is mein biggest value end pe chali jayn gi.
+dusry loop ki condition (number of compares) bata rahi hai.
